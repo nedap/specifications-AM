@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="generator" content="Asciidoctor 2.0.21">
 <meta name="description" content="openEHR Archetype Technology Overview">
 <meta name="keywords" content="archetype, identification, governance, openehr">
 <title>Archetype Technology Overview</title>
@@ -109,7 +109,7 @@
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-center valign-top" colspan="2">&#169; 2014 - 2023 The openEHR Foundation</th>
+<th class="tableblock halign-center valign-top" colspan="2">&#169; 2014 - 2024 The openEHR Foundation</th>
 </tr>
 </thead>
 <tbody>
@@ -288,7 +288,7 @@
 <p>In the figure above, the 'meaningful instance space' (shown in aqua) corresponds to the actual data of interest in any information system, and yet the only way to model it according to the classic textbook approach is simply by growing the information model. The problem with this is that the information model is generally the basis of the deployable software, and also the database schemas, and so constant changes imply constant system instability.</p>
 </div>
 <div class="paragraph">
-<p>It is widely recognized that other mechanisms are needed to enable some sort of 'templating' of the 'meaningful instance space', to enable common patterns to be defined. Doing so can aid the subsequent development of software or other artefacts (typically UI forms) to be based on instance structures that are actually known to occur. The general need was described in Martin Fowler&#8217;s 1997 book 'Analysis Patterns' (<a href="#Fowler1997">Fowler&#44; 1997</a>), in which 'patterns' are illustrated in 'above the line' parts of UML diagrams, but has been known for some decades. It is generally understood that this kind of modelling cannot simply be an extension of the existing software or database schemata. The obvious IT reason for this is that to do so implies endless maintenance and updating of deployed software, and worse, frequent database migration. In systems operating 24x365, and routinely creating Terabytes of data per year, this is not an acceptable approach.</p>
+<p>It is widely recognized that other mechanisms are needed to enable some sort of 'templating' of the 'meaningful instance space', to enable common patterns to be defined. Doing so can aid the subsequent development of software or other artefacts (typically UI forms) to be based on instance structures that are actually known to occur. The general need was described in Martin Fowler&#8217;s 1997 book 'Analysis Patterns' <span class="citation">(<a href="#Fowler1997">Fowler&#44; 1997</a>)</span>, in which 'patterns' are illustrated in 'above the line' parts of UML diagrams, but has been known for some decades. It is generally understood that this kind of modelling cannot simply be an extension of the existing software or database schemata. The obvious IT reason for this is that to do so implies endless maintenance and updating of deployed software, and worse, frequent database migration. In systems operating 24x365, and routinely creating Terabytes of data per year, this is not an acceptable approach.</p>
 </div>
 <div class="paragraph">
 <p>However, there is an arguably more important reason to provide a generic means of modelling domain information patterns: the authors of domain level definitions or models will not be software or database developers, but domain experts of some kind, e.g. physicians or aeronautical engineers. The latter kind of professional will not generally know or care about the programming or modelling languages used by IT people, and will often have their own formalisms, incomprehensible to IT professionals. Further, the semantics they use in their domain will often not be directly representable in the comparatively simplistic formalisms of UML or ER models.</p>
@@ -326,7 +326,7 @@
 <h2 id="_archetype_formalism_overview"><a class="anchor" href="#_archetype_formalism_overview"></a>2. Archetype Formalism Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The openEHR Archetype formalism, originally described in <a href="#Beale2002">Beale (2002)</a> as 'two-level modelling' is designed to be independent of any specific information model, product, technical format, or industry vertical. It is designed so that instances of the formalism, known as Archetypes, can be computationally processed into desired output forms corresponding to specific technology environments. This is routinely performed in openEHR tooling environments.</p>
+<p>The openEHR Archetype formalism, originally described in <span class="citation"><a href="#Beale2002">Beale (2002)</a></span> as 'two-level modelling' is designed to be independent of any specific information model, product, technical format, or industry vertical. It is designed so that instances of the formalism, known as Archetypes, can be computationally processed into desired output forms corresponding to specific technology environments. This is routinely performed in openEHR tooling environments.</p>
 </div>
 <div class="paragraph">
 <p>The formalism primarily addresses the expression of models of possible data instance structures, rather than higher level concepts such as workflows, clinical guidelines (which are decision graphs) and so on, although its general approach can be applied to any of these, i.e. the use of a model of 'what can be said' and a formalism or mechanism for constraining possibilities to the meaningful subset.</p>
@@ -767,7 +767,7 @@
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-09 11:12:16 UTC
+Last updated 2024-02-19 14:36:31 UTC
 </div>
 </div>
 </body>

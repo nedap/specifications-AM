@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="generator" content="Asciidoctor 2.0.21">
 <meta name="description" content="openEHR Archetype Object Model 1.4 (AOM1.4)">
 <meta name="keywords" content="EHR, ADL, AOM, health records, archetypes, constraint language, ISO 13606, openehr">
 <title>Archetype Object Model 1.4 (AOM1.4)</title>
@@ -240,7 +240,7 @@
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-center valign-top" colspan="2">&#169; 2004 - 2023 The openEHR Foundation</th>
+<th class="tableblock halign-center valign-top" colspan="2">&#169; 2004 - 2024 The openEHR Foundation</th>
 </tr>
 </thead>
 <tbody>
@@ -691,7 +691,7 @@ for users requiring the most recent form of ADL and archetype technology in gene
 <div class="sect3">
 <h4 id="_what_is_an_archetype"><a class="anchor" href="#_what_is_an_archetype"></a>1.7.1. What is an Archetype?</h4>
 <div class="paragraph">
-<p>Archetypes are constraint-based models of domain entities, or what some might call "structured business rules". Each archetype describes configurations of data instances whose classes are described in a reference model; the instance configurations are considered to be valid exemplars of a particular domain concept. Thus, in medicine, an archetype might be designed to constrain configurations of instances of a simple node/arc information model, that express a "microbiology test result" or a "physical examination". Archetypes can be composed, specialised, and templated for local use. The archetype concept has been described in detail by <a href="#Beale2000">Beale (2000)</a>, <a href="#Beale2002">Beale (2002)</a>. Most of the detailed formal semantics are described in the <a href="https://specifications.openehr.org/releases/AM/latest/ADL1.4.html" target="_blank" rel="noopener">openEHR Archetype Definition Language</a>. The openEHR archetype framework is described in the <a href="https://specifications.openehr.org/releases/AM/latest/Overview.html" target="_blank" rel="noopener">openEHR Archetypes Technical Overview</a>.</p>
+<p>Archetypes are constraint-based models of domain entities, or what some might call "structured business rules". Each archetype describes configurations of data instances whose classes are described in a reference model; the instance configurations are considered to be valid exemplars of a particular domain concept. Thus, in medicine, an archetype might be designed to constrain configurations of instances of a simple node/arc information model, that express a "microbiology test result" or a "physical examination". Archetypes can be composed, specialised, and templated for local use. The archetype concept has been described in detail by <span class="citation"><a href="#Beale2000">Beale (2000)</a></span>, <span class="citation"><a href="#Beale2002">Beale (2002)</a></span>. Most of the detailed formal semantics are described in the <a href="https://specifications.openehr.org/releases/AM/latest/ADL1.4.html" target="_blank" rel="noopener">openEHR Archetype Definition Language</a>. The openEHR archetype framework is described in the <a href="https://specifications.openehr.org/releases/AM/latest/Overview.html" target="_blank" rel="noopener">openEHR Archetypes Technical Overview</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -832,7 +832,7 @@ Source projects can be found at the <a href="https://github.com/openEHR" target=
 <div class="sect3">
 <h4 id="_the_archetype_ontology"><a class="anchor" href="#_the_archetype_ontology"></a>2.3.2. The Archetype Ontology</h4>
 <div class="paragraph">
-<p>There are no linguistic entities at all in the <code>definition</code> part of an archetype, with the possible exception of constraints on text items which might have been defined in terms of regular expression patterns or fixed strings. All linguistic entities are defined in the <code>ontology</code> part of the archetype, in such a way as to allow them to be translated into other languages in convenient blocks. As described in the openEHR ADL document, there are four major parts in an archetype <code>ontology</code> section: term definitions, constraint definitions, term bindings and constraint bindings. The former two define the meanings of various terms and textual constraints which occur in the archetype; they are indexed with unique identifiers which are used within the archetype definition body. The latter two ontology sections describe the mappings of terms used internally to external terminologies. Due to the well-known problems with terminologies (described in some detail in the <a href="https://specifications.openehr.org/releases/AM/latest/ADL1.4.html" target="_blank" rel="noopener">openEHR ADL 1.4 specification</a>, and also by e.g. <a href="#Rector1999">Rector (2000)</a> and others), mappings may be partial, incomplete, approximate, and occasionally, exact.</p>
+<p>There are no linguistic entities at all in the <code>definition</code> part of an archetype, with the possible exception of constraints on text items which might have been defined in terms of regular expression patterns or fixed strings. All linguistic entities are defined in the <code>ontology</code> part of the archetype, in such a way as to allow them to be translated into other languages in convenient blocks. As described in the openEHR ADL document, there are four major parts in an archetype <code>ontology</code> section: term definitions, constraint definitions, term bindings and constraint bindings. The former two define the meanings of various terms and textual constraints which occur in the archetype; they are indexed with unique identifiers which are used within the archetype definition body. The latter two ontology sections describe the mappings of terms used internally to external terminologies. Due to the well-known problems with terminologies (described in some detail in the <a href="https://specifications.openehr.org/releases/AM/latest/ADL1.4.html" target="_blank" rel="noopener">openEHR ADL 1.4 specification</a>, and also by e.g. <span class="citation"><a href="#Rector1999">Rector (2000)</a></span> and others), mappings may be partial, incomplete, approximate, and occasionally, exact.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1621,7 +1621,7 @@ a_path: <code>String[1]</code><br>
 <th class="tableblock halign-center valign-top"><p class="tableblock"><strong>1..1</strong></p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>node_id</strong>: <code>String</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Semantic identifier of this node, used to dis-tinguish sibling nodes. All nodes must have a node_id; for nodes under a container C_ATTRIBUTE, the id must be an id-code must be defined in the archetype terminolo-gy. For valid structures, all node ids are id-codes.
+<p>Semantic identifier of this node, used to dis-tinguish sibling nodes. All nodes must have a node_id; for nodes under a container C_ATTRIBUTE, the id must be an id-code must be defined in the archetype terminolo-gy. For valid structures, all node ids are at-codes.
 For C_PRIMITIVE_OBJECTs, it will have the special value Primitive_node_id.</p>
 </div></div></td>
 </tr>
@@ -4021,7 +4021,7 @@ Hash of keys ("text", "description" etc) and corresponding values.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-02-14 22:51:34 UTC
+Last updated 2024-02-19 14:36:30 UTC
 </div>
 </div>
 </body>
